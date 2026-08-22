@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.preventDefault();
 
                 target.scrollIntoView({
-                    behavior: "smooth"
+                    behavior: "smooth",
+                    block: "start"
                 });
 
             }
