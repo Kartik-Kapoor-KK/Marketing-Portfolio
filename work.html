@@ -12,12 +12,17 @@
 
     <meta
         name="description"
-        content="Selected marketing case studies by Kartik Kapoor across growth, demand generation, content and product marketing."
+        content="Selected marketing work by Kartik Kapoor across product marketing, demand generation, content and go-to-market."
     >
 
     <link
         rel="icon"
         type="image/jpeg"
+        href="assets/kartik-kapoor.jpg"
+    >
+
+    <link
+        rel="apple-touch-icon"
         href="assets/kartik-kapoor.jpg"
     >
 
@@ -30,220 +35,777 @@
         href="style.css"
     >
 
+    <style>
+
+        /* =================================================
+           WORK PAGE
+        ================================================= */
+
+        .work-page {
+            background: #f2eee6;
+        }
+
+
+        .work-hero {
+            padding: 95px 0 90px;
+            background: #090b0e;
+            color: #ffffff;
+        }
+
+
+        .work-kicker {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(255,255,255,0.14);
+            color: #a8adb7;
+            font-size: 8px;
+            font-weight: 900;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+
+        .work-hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 270px;
+            gap: 80px;
+            align-items: end;
+            padding-top: 65px;
+        }
+
+
+        .work-hero h1 {
+            max-width: 900px;
+            margin: 0;
+            font-size: clamp(53px, 7vw, 91px);
+            line-height: 0.89;
+            letter-spacing: -0.075em;
+        }
+
+
+        .work-hero h1 span {
+            color: #7dd3fc;
+        }
+
+
+        .work-hero-copy {
+            max-width: 650px;
+            margin-top: 28px;
+            color: #a8adb7;
+            font-size: 15px;
+            line-height: 1.55;
+        }
+
+
+        .work-hero-note {
+            padding: 28px;
+            border: 1px solid rgba(255,255,255,0.14);
+        }
+
+
+        .work-hero-note span {
+            color: #a8adb7;
+            font-size: 8px;
+            font-weight: 900;
+            letter-spacing: 0.12em;
+        }
+
+
+        .work-hero-note strong {
+            display: block;
+            margin-top: 30px;
+            color: #ffffff;
+            font-size: 28px;
+            line-height: 1;
+        }
+
+
+        .work-hero-note p {
+            margin-top: 15px;
+            color: #a8adb7;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+
+        /* -----------------------------------------------
+           PROOF BAR
+        ----------------------------------------------- */
+
+        .work-proof {
+            background: #7dd3fc;
+        }
+
+
+        .work-proof-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+
+        .work-proof-item {
+            min-height: 125px;
+            padding: 25px;
+            border-right: 1px solid rgba(9,11,14,0.16);
+        }
+
+
+        .work-proof-item:last-child {
+            border-right: 0;
+        }
+
+
+        .work-proof-item span {
+            display: block;
+            color: #334155;
+            font-size: 8px;
+            font-weight: 900;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+        }
+
+
+        .work-proof-item strong {
+            display: block;
+            margin-top: 10px;
+            color: #090b0e;
+            font-size: 25px;
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+
+        /* -----------------------------------------------
+           CASE STUDIES
+        ----------------------------------------------- */
+
+        .work-cases {
+            padding: 115px 0;
+            background: #f2eee6;
+        }
+
+
+        .work-section-heading {
+            max-width: 850px;
+        }
+
+
+        .work-section-heading h2 {
+            margin-top: 8px;
+            font-size: clamp(44px, 6vw, 75px);
+            line-height: 0.94;
+            letter-spacing: -0.065em;
+        }
+
+
+        .work-section-heading h2 span {
+            color: #2563eb;
+        }
+
+
+        .work-section-heading p:last-child {
+            max-width: 650px;
+            margin-top: 20px;
+            color: #59616d;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+
+        .work-case-list {
+            margin-top: 70px;
+            border-top: 1px solid rgba(9,11,14,0.13);
+        }
+
+
+        .work-case {
+            display: grid;
+            grid-template-columns: 80px minmax(0, 1fr) 200px 45px;
+            gap: 30px;
+            align-items: center;
+            padding: 35px 0;
+            border-bottom: 1px solid rgba(9,11,14,0.13);
+            color: #090b0e;
+            transition:
+                padding 0.25s ease,
+                background 0.25s ease;
+        }
+
+
+        .work-case:hover {
+            padding-left: 20px;
+            padding-right: 20px;
+            background: #ffffff;
+        }
+
+
+        .work-case-number {
+            color: #2563eb;
+            font-size: 10px;
+            font-weight: 900;
+        }
+
+
+        .work-case-main span {
+            color: #2563eb;
+            font-size: 8px;
+            font-weight: 900;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+        }
+
+
+        .work-case-main h3 {
+            margin-top: 8px;
+            font-size: 30px;
+            line-height: 1;
+            letter-spacing: -0.045em;
+        }
+
+
+        .work-case-main p {
+            max-width: 600px;
+            margin-top: 12px;
+            color: #59616d;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+
+        .work-case-result {
+            padding-left: 20px;
+            border-left: 1px solid rgba(9,11,14,0.13);
+        }
+
+
+        .work-case-result span {
+            display: block;
+            color: #59616d;
+            font-size: 8px;
+            font-weight: 900;
+            letter-spacing: 0.09em;
+        }
+
+
+        .work-case-result strong {
+            display: block;
+            margin-top: 7px;
+            color: #090b0e;
+            font-size: 22px;
+            line-height: 1;
+        }
+
+
+        .work-case-arrow {
+            color: #2563eb;
+            font-size: 23px;
+        }
+
+
+        /* -----------------------------------------------
+           MARKETING SYSTEM
+        ----------------------------------------------- */
+
+        .work-system {
+            padding: 115px 0;
+            background: #090b0e;
+            color: #ffffff;
+        }
+
+
+        .work-system-heading {
+            max-width: 850px;
+        }
+
+
+        .work-system-heading h2 {
+            margin-top: 8px;
+            font-size: clamp(44px, 6vw, 75px);
+            line-height: 0.94;
+            letter-spacing: -0.065em;
+        }
+
+
+        .work-system-heading h2 span {
+            color: #7dd3fc;
+        }
+
+
+        .work-system-heading p:last-child {
+            max-width: 650px;
+            margin-top: 20px;
+            color: #a8adb7;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+
+        .work-system-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 65px;
+            border-top: 1px solid rgba(255,255,255,0.14);
+        }
+
+
+        .work-system-item {
+            min-height: 250px;
+            padding: 27px;
+            border-right: 1px solid rgba(255,255,255,0.14);
+        }
+
+
+        .work-system-item:last-child {
+            border-right: 0;
+        }
+
+
+        .work-system-item span {
+            color: #7dd3fc;
+            font-size: 9px;
+            font-weight: 900;
+        }
+
+
+        .work-system-item strong {
+            display: block;
+            margin-top: 48px;
+            color: #ffffff;
+            font-size: 24px;
+            line-height: 1;
+        }
+
+
+        .work-system-item p {
+            margin-top: 14px;
+            color: #a8adb7;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+
+        /* -----------------------------------------------
+           CTA
+        ----------------------------------------------- */
+
+        .work-cta {
+            padding: 105px 0;
+            background: #ffffff;
+        }
+
+
+        .work-cta h2 {
+            max-width: 900px;
+            margin-top: 8px;
+            font-size: clamp(50px, 7vw, 85px);
+            line-height: 0.9;
+            letter-spacing: -0.07em;
+        }
+
+
+        .work-cta h2 span {
+            color: #2563eb;
+        }
+
+
+        .work-cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            min-height: 52px;
+            margin-top: 30px;
+            padding: 0 20px;
+            border-radius: 5px;
+            background: #090b0e;
+            color: #ffffff;
+            font-size: 10px;
+            font-weight: 900;
+        }
+
+
+        .work-cta-button:hover {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+
+        /* -----------------------------------------------
+           MOBILE
+        ----------------------------------------------- */
+
+        @media (max-width: 950px) {
+
+            .work-hero-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+
+            .work-proof-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            .work-proof-item:nth-child(2) {
+                border-right: 0;
+            }
+
+
+            .work-system-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            .work-system-item:nth-child(2) {
+                border-right: 0;
+            }
+
+
+            .work-case {
+                grid-template-columns: 50px minmax(0, 1fr) 150px 30px;
+                gap: 18px;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .work-hero {
+                padding: 70px 0;
+            }
+
+
+            .work-hero h1 {
+                font-size: 51px;
+            }
+
+
+            .work-cases,
+            .work-system {
+                padding: 80px 0;
+            }
+
+
+            .work-section-heading h2,
+            .work-system-heading h2 {
+                font-size: 42px;
+            }
+
+
+            .work-proof-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .work-proof-item {
+                min-height: auto;
+                border-right: 0;
+                border-bottom: 1px solid rgba(9,11,14,0.16);
+            }
+
+
+            .work-proof-item:last-child {
+                border-bottom: 0;
+            }
+
+
+            .work-case {
+                grid-template-columns: 35px 1fr 25px;
+                gap: 15px;
+                padding: 25px 0;
+            }
+
+
+            .work-case-result {
+                grid-column: 2 / 3;
+                padding: 12px 0 0;
+                border-left: 0;
+                border-top: 1px solid rgba(9,11,14,0.13);
+            }
+
+
+            .work-case-arrow {
+                grid-column: 3;
+                grid-row: 1;
+            }
+
+
+            .work-case-main h3 {
+                font-size: 23px;
+            }
+
+
+            .work-case:hover {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+
+            .work-system-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .work-system-item {
+                border-right: 0;
+                border-bottom: 1px solid rgba(255,255,255,0.14);
+            }
+
+
+            .work-system-item:last-child {
+                border-bottom: 0;
+            }
+
+
+            .work-cta {
+                padding: 80px 0;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 
 <body>
 
 
-<header class="site-header"></header>
+<header class="site-header">
+
+    <div class="nav-container">
 
 
-<main>
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <img
+                src="assets/kartik-kapoor.jpg"
+                alt="Kartik Kapoor"
+                class="brand-photo"
+            >
 
 
-<section class="archive-hero dark-section">
+            <div class="brand-text">
+
+                <strong>
+                    Kartik Kapoor
+                </strong>
+
+                <span>
+                    B2B Technology Marketing
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a
+                href="work.html"
+                class="active"
+            >
+                Work
+            </a>
+
+
+            <a href="creative-work.html">
+                Creative Work
+            </a>
+
+
+            <a href="experience.html">
+                Experience
+            </a>
+
+
+            <a href="about.html">
+                About
+            </a>
+
+
+            <a
+                href="assets/Kartik-Kapoor-Resume.pdf"
+                target="_blank"
+                class="nav-resume"
+            >
+                Resume ↗
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/kartik-kapoor-kk/"
+                target="_blank"
+                class="nav-linkedin"
+            >
+                LinkedIn ↗
+            </a>
+
+        </nav>
+
+
+        <button
+            class="mobile-menu-button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+
+    </div>
+
+</header>
+
+
+<main class="work-page">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="work-hero">
 
     <div class="section-container">
 
-        <p class="section-label">
-            SELECTED WORK
-        </p>
 
-        <h1>
-            What I Have
-            <span>Built And Changed.</span>
-        </h1>
+        <div class="work-kicker">
 
-        <p class="archive-intro">
-            Four examples of marketing work where strategy,
-            execution and measurable outcomes came together.
-        </p>
+            <span>
+                Selected Work
+            </span>
+
+            <span>
+                Strategy + Execution
+            </span>
+
+            <span>
+                B2B Technology
+            </span>
+
+        </div>
+
+
+        <div class="work-hero-grid">
+
+
+            <div>
+
+                <h1>
+                    Marketing That
+                    <span>Moves Something.</span>
+                </h1>
+
+
+                <p class="work-hero-copy">
+                    Selected examples of how I have approached
+                    positioning, demand generation, content and
+                    go-to-market across B2B technology businesses.
+                </p>
+
+            </div>
+
+
+            <div class="work-hero-note">
+
+                <span>
+                    THE FILTER
+                </span>
+
+
+                <strong>
+                    Strategy.
+                    Execution.
+                    Evidence.
+                </strong>
+
+
+                <p>
+                    Every project starts with a business problem
+                    and ends with something measurable.
+                </p>
+
+            </div>
+
+
+        </div>
+
 
     </div>
 
 </section>
 
 
-<section class="selected-work dark-section">
+<!-- =====================================================
+     PROOF
+===================================================== -->
+
+<section class="work-proof">
 
     <div class="section-container">
 
 
-        <div class="featured-work">
+        <div class="work-proof-grid">
 
 
-            <article class="featured-work-item">
+            <div class="work-proof-item">
 
-                <div class="featured-number">
-                    01
-                </div>
+                <span>
+                    Marketing Experience
+                </span>
 
-                <div class="featured-work-main">
+                <strong>
+                    4+ Years
+                </strong>
 
-                    <div class="featured-work-meta">
-
-                        <span>
-                            GROWTH MARKETING
-                        </span>
-
-                        <strong>
-                            300%
-                        </strong>
-
-                    </div>
-
-                    <h3>
-                        Turning LinkedIn Into
-                        A Growth Channel
-                    </h3>
-
-                    <p>
-                        A focused approach to content,
-                        distribution and engagement that
-                        significantly expanded ClayHR's
-                        LinkedIn audience.
-                    </p>
-
-                    <a
-                        href="case-studies/linkedin-growth.html"
-                        class="case-study-button"
-                    >
-                        Read Case Study →
-                    </a>
-
-                </div>
-
-            </article>
+            </div>
 
 
-            <article class="featured-work-item">
+            <div class="work-proof-item">
 
-                <div class="featured-number">
-                    02
-                </div>
+                <span>
+                    Professional Experience
+                </span>
 
-                <div class="featured-work-main">
+                <strong>
+                    6+ Years
+                </strong>
 
-                    <div class="featured-work-meta">
-
-                        <span>
-                            DEMAND GENERATION
-                        </span>
-
-                        <strong>
-                            37%
-                        </strong>
-
-                    </div>
-
-                    <h3>
-                        Making A Webinar
-                        Work Harder
-                    </h3>
-
-                    <p>
-                        A multi-channel campaign built around
-                        a webinar, combining paid, email,
-                        LinkedIn and organic promotion.
-                    </p>
-
-                    <a
-                        href="case-studies/demand-generation.html"
-                        class="case-study-button"
-                    >
-                        Read Case Study →
-                    </a>
-
-                </div>
-
-            </article>
+            </div>
 
 
-            <article class="featured-work-item">
+            <div class="work-proof-item">
 
-                <div class="featured-number">
-                    03
-                </div>
+                <span>
+                    Core Domains
+                </span>
 
-                <div class="featured-work-main">
+                <strong>
+                    SaaS + AI
+                </strong>
 
-                    <div class="featured-work-meta">
-
-                        <span>
-                            CONTENT MARKETING
-                        </span>
-
-                        <strong>
-                            50+
-                        </strong>
-
-                    </div>
-
-                    <h3>
-                        Building Content
-                        Around The Buyer
-                    </h3>
-
-                    <p>
-                        A broad content program spanning blogs,
-                        eBooks, newsletters, landing pages,
-                        thought leadership and product storytelling.
-                    </p>
-
-                    <a
-                        href="case-studies/content-marketing.html"
-                        class="case-study-button"
-                    >
-                        Read Case Study →
-                    </a>
-
-                </div>
-
-            </article>
+            </div>
 
 
-            <article class="featured-work-item">
+            <div class="work-proof-item">
 
-                <div class="featured-number">
-                    04
-                </div>
+                <span>
+                    Focus
+                </span>
 
-                <div class="featured-work-main">
+                <strong>
+                    GTM + Growth
+                </strong>
 
-                    <div class="featured-work-meta">
-
-                        <span>
-                            PRODUCT MARKETING
-                        </span>
-
-                        <strong>
-                            40+
-                        </strong>
-
-                    </div>
-
-                    <h3>
-                        Giving Sales Better
-                        Stories To Tell
-                    </h3>
-
-                    <p>
-                        Product decks, one-pagers, brochures,
-                        videos and enablement resources designed
-                        to make a complex product easier to sell.
-                    </p>
-
-                    <a
-                        href="case-studies/product-marketing.html"
-                        class="case-study-button"
-                    >
-                        Read Case Study →
-                    </a>
-
-                </div>
-
-            </article>
+            </div>
 
 
         </div>
@@ -253,132 +815,416 @@
 </section>
 
 
-<section class="industry-section">
+<!-- =====================================================
+     CASE STUDIES
+===================================================== -->
+
+<section class="work-cases">
 
     <div class="section-container">
 
-        <p class="section-label">
-            HOW I APPROACH THE WORK
-        </p>
 
-        <div class="industry-heading">
+        <div class="work-section-heading">
+
+            <p class="section-label">
+                Selected Case Studies
+            </p>
+
 
             <h2>
-                Understand First.
-                <span>Then Build.</span>
+                Four Problems.
+                <span>Four Different Answers.</span>
             </h2>
 
+
             <p>
-                I start with the product and the buyer.
-                The channel comes later.
+                These case studies represent different sides
+                of the marketing function, from building an
+                audience and generating demand to shaping
+                content and positioning products for market.
             </p>
 
         </div>
 
 
-        <div class="industry-lines">
+        <div class="work-case-list">
 
-            <div class="industry-line">
 
-                <span>
+            <!-- 01 -->
+
+            <a
+                href="case-studies/linkedin-growth.html"
+                class="work-case"
+            >
+
+                <div class="work-case-number">
                     01
-                </span>
+                </div>
 
-                <div>
 
-                    <small>
-                        PRODUCT
-                    </small>
+                <div class="work-case-main">
+
+                    <span>
+                        Audience Growth
+                    </span>
+
 
                     <h3>
-                        What Are We Actually Selling?
+                        LinkedIn Growth
                     </h3>
 
+
                     <p>
-                        Understand the product, its differentiation,
-                        its limitations and the problem it genuinely solves.
+                        Building a repeatable organic and paid
+                        approach to audience growth rather than
+                        treating social as a publishing channel.
                     </p>
 
                 </div>
 
-            </div>
+
+                <div class="work-case-result">
+
+                    <span>
+                        RESULT
+                    </span>
+
+                    <strong>
+                        300% MoM
+                    </strong>
+
+                </div>
 
 
-            <div class="industry-line">
+                <div class="work-case-arrow">
+                    →
+                </div>
 
-                <span>
+            </a>
+
+
+            <!-- 02 -->
+
+            <a
+                href="case-studies/demand-generation.html"
+                class="work-case"
+            >
+
+                <div class="work-case-number">
                     02
-                </span>
+                </div>
 
-                <div>
 
-                    <small>
-                        BUYER
-                    </small>
+                <div class="work-case-main">
+
+                    <span>
+                        Demand Generation
+                    </span>
+
 
                     <h3>
-                        Why Should Someone Care?
+                        Demand Generation
                     </h3>
 
+
                     <p>
-                        Translate product capability into a message
-                        that connects with the buyer's priorities.
+                        Connecting paid campaigns, webinars,
+                        audience targeting and follow-up into
+                        a more deliberate demand engine.
                     </p>
 
                 </div>
 
-            </div>
+
+                <div class="work-case-result">
+
+                    <span>
+                        RESULT
+                    </span>
+
+                    <strong>
+                        +37%
+                    </strong>
+
+                </div>
 
 
-            <div class="industry-line">
+                <div class="work-case-arrow">
+                    →
+                </div>
 
-                <span>
+            </a>
+
+
+            <!-- 03 -->
+
+            <a
+                href="case-studies/content-marketing.html"
+                class="work-case"
+            >
+
+                <div class="work-case-number">
                     03
-                </span>
+                </div>
 
-                <div>
 
-                    <small>
-                        EXECUTION
-                    </small>
+                <div class="work-case-main">
+
+                    <span>
+                        Content Marketing
+                    </span>
+
 
                     <h3>
-                        Where Does The Story Need To Travel?
+                        Content Marketing
                     </h3>
 
+
                     <p>
-                        Choose the channels, formats and campaigns
-                        based on the audience rather than habit.
+                        Turning product knowledge and audience
+                        research into useful content designed to
+                        support discovery, trust and conversion.
                     </p>
 
                 </div>
 
-            </div>
+
+                <div class="work-case-result">
+
+                    <span>
+                        APPROACH
+                    </span>
+
+                    <strong>
+                        SEO + Content
+                    </strong>
+
+                </div>
+
+
+                <div class="work-case-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+            <!-- 04 -->
+
+            <a
+                href="case-studies/product-marketing.html"
+                class="work-case"
+            >
+
+                <div class="work-case-number">
+                    04
+                </div>
+
+
+                <div class="work-case-main">
+
+                    <span>
+                        Product Marketing
+                    </span>
+
+
+                    <h3>
+                        Product Marketing
+                    </h3>
+
+
+                    <p>
+                        Translating product capabilities into
+                        clearer positioning, messaging and
+                        buyer-facing narratives.
+                    </p>
+
+                </div>
+
+
+                <div class="work-case-result">
+
+                    <span>
+                        FOCUS
+                    </span>
+
+                    <strong>
+                        Positioning
+                    </strong>
+
+                </div>
+
+
+                <div class="work-case-arrow">
+                    →
+                </div>
+
+            </a>
+
 
         </div>
+
 
     </div>
 
 </section>
 
 
-<section class="final-cta">
+<!-- =====================================================
+     MARKETING SYSTEM
+===================================================== -->
+
+<section class="work-system">
 
     <div class="section-container">
 
-        <p class="eyebrow">
-            EXPLORE THE PROCESS
+
+        <div class="work-system-heading">
+
+            <p class="section-label">
+                How The Work Connects
+            </p>
+
+
+            <h2>
+                Marketing Is Not
+                A Collection Of <span>Tactics.</span>
+            </h2>
+
+
+            <p>
+                The strongest work happens when positioning,
+                content, distribution and demand generation
+                reinforce each other.
+            </p>
+
+        </div>
+
+
+        <div class="work-system-grid">
+
+
+            <div class="work-system-item">
+
+                <span>
+                    01
+                </span>
+
+
+                <strong>
+                    Position
+                </strong>
+
+
+                <p>
+                    Clarify who the product is for,
+                    what problem it solves and why
+                    it matters.
+                </p>
+
+            </div>
+
+
+            <div class="work-system-item">
+
+                <span>
+                    02
+                </span>
+
+
+                <strong>
+                    Create
+                </strong>
+
+
+                <p>
+                    Build the content and assets that
+                    make the message tangible.
+                </p>
+
+            </div>
+
+
+            <div class="work-system-item">
+
+                <span>
+                    03
+                </span>
+
+
+                <strong>
+                    Distribute
+                </strong>
+
+
+                <p>
+                    Put the right message in front of
+                    the right audience through the
+                    right channels.
+                </p>
+
+            </div>
+
+
+            <div class="work-system-item">
+
+                <span>
+                    04
+                </span>
+
+
+                <strong>
+                    Learn
+                </strong>
+
+
+                <p>
+                    Use performance and feedback to
+                    improve the next iteration.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="work-cta">
+
+    <div class="section-container">
+
+
+        <p class="section-label">
+            Go Deeper
         </p>
+
 
         <h2>
-            The Numbers Are Interesting.
-            <span>The Story Behind Them Is Better.</span>
+            The Work Is Only
+            Interesting When You
+            <span>Understand The Why.</span>
         </h2>
 
-        <p>
-            Open a case study to see the problem,
-            the decisions, the work and the outcome.
-        </p>
+
+        <a
+            href="creative-work.html"
+            class="work-cta-button"
+        >
+            See The Creative Work
+            <span>
+                →
+            </span>
+        </a>
+
 
     </div>
 
@@ -388,41 +1234,77 @@
 </main>
 
 
-<footer>
+<footer class="site-footer">
 
-    <div>
+    <div class="footer-top">
 
-        <strong>
-            Kartik Kapoor
-        </strong>
+
+        <div class="footer-brand">
+
+            <strong>
+                Kartik Kapoor
+            </strong>
+
+            <p>
+                B2B Technology Marketing
+            </p>
+
+        </div>
+
+
+        <div class="footer-navigation">
+
+            <a href="work.html">
+                Work
+            </a>
+
+            <a href="creative-work.html">
+                Creative Work
+            </a>
+
+            <a href="experience.html">
+                Experience
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <a href="mailto:kapoorkartik69@gmail.com">
+                Email ↗
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/kartik-kapoor-kk/"
+                target="_blank"
+            >
+                LinkedIn ↗
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
 
         <span>
-            B2B Technology Marketing · Product Marketing · GTM
+            © 2026 Kartik Kapoor
+        </span>
+
+
+        <span>
+            Product Marketing · GTM · B2B Technology
         </span>
 
     </div>
-
-
-    <div class="footer-links">
-
-        <a href="archive.html">
-            Archive
-        </a>
-
-        <a href="experience.html">
-            Experience
-        </a>
-
-        <a href="about.html">
-            About
-        </a>
-
-    </div>
-
-
-    <span>
-        © 2026 Kartik Kapoor
-    </span>
 
 </footer>
 
