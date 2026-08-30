@@ -4040,3 +4040,1459 @@ button {
     }
 
 }
+
+/* =========================================================
+   LINKEDIN GROWTH CASE STUDY
+========================================================= */
+
+.linkedin-case-hero {
+
+    padding:
+        95px 0 85px;
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+}
+
+
+.linkedin-case-topline {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        25px;
+
+    padding-bottom:
+        18px;
+
+    border-bottom:
+        1px solid var(--line);
+
+    color:
+        var(--grey);
+
+    font-size:
+        8px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.13em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.linkedin-case-hero-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0, 1fr) 310px;
+
+    gap:
+        90px;
+
+    align-items:
+        end;
+
+    padding-top:
+        65px;
+
+}
+
+
+.linkedin-case-title h1 {
+
+    max-width:
+        850px;
+
+    font-size:
+        clamp(53px, 7vw, 91px);
+
+    line-height:
+        0.89;
+
+    letter-spacing:
+        -0.075em;
+
+}
+
+
+.linkedin-case-title h1 span {
+
+    color:
+        var(--blue);
+
+}
+
+
+.linkedin-case-title > p {
+
+    max-width:
+        620px;
+
+    margin-top:
+        28px;
+
+    color:
+        var(--grey);
+
+    font-size:
+        15px;
+
+}
+
+
+.case-back-link {
+
+    display:
+        inline-block;
+
+    margin-top:
+        28px;
+
+    color:
+        var(--white);
+
+    font-size:
+        10px;
+
+    font-weight:
+        900;
+
+}
+
+
+.case-back-link:hover {
+
+    color:
+        var(--blue);
+
+}
+
+
+/* BIG 300% */
+
+.linkedin-growth-number {
+
+    padding:
+        28px 0 0;
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+.growth-number-label {
+
+    display:
+        block;
+
+    color:
+        var(--grey);
+
+    font-size:
+        8px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.12em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.linkedin-growth-number strong {
+
+    display:
+        block;
+
+    margin-top:
+        12px;
+
+    color:
+        var(--blue);
+
+    font-size:
+        clamp(95px, 11vw, 145px);
+
+    line-height:
+        0.78;
+
+    letter-spacing:
+        -0.1em;
+
+}
+
+
+.growth-number-line {
+
+    width:
+        100%;
+
+    height:
+        1px;
+
+    margin-top:
+        27px;
+
+    background:
+        var(--line);
+
+}
+
+
+.linkedin-growth-number p {
+
+    max-width:
+        220px;
+
+    margin-top:
+        13px;
+
+    color:
+        var(--grey);
+
+    font-size:
+        10px;
+
+}
+
+
+/* =========================================================
+   FACTS
+========================================================= */
+
+.linkedin-facts {
+
+    background:
+        var(--blue);
+
+}
+
+
+.linkedin-facts-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+}
+
+
+.linkedin-facts-grid > div {
+
+    min-height:
+        115px;
+
+    padding:
+        25px;
+
+    border-right:
+        1px solid rgba(9,11,14,0.17);
+
+}
+
+
+.linkedin-facts-grid > div:last-child {
+
+    border-right:
+        0;
+
+}
+
+
+.linkedin-facts-grid span {
+
+    display:
+        block;
+
+    color:
+        #2c3652;
+
+    font-size:
+        8px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.12em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.linkedin-facts-grid strong {
+
+    display:
+        block;
+
+    margin-top:
+        8px;
+
+    color:
+        var(--black);
+
+    font-size:
+        17px;
+
+    line-height:
+        1.1;
+
+}
+
+
+/* =========================================================
+   PROBLEM
+========================================================= */
+
+.linkedin-problem {
+
+    padding:
+        115px 0;
+
+    background:
+        var(--cream);
+
+}
+
+
+.linkedin-section-number {
+
+    color:
+        var(--blue);
+
+    font-size:
+        10px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.12em;
+
+}
+
+
+.linkedin-problem-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 0.85fr;
+
+    gap:
+        100px;
+
+    margin-top:
+        32px;
+
+}
+
+
+.linkedin-problem-grid h2 {
+
+    max-width:
+        700px;
+
+    font-size:
+        clamp(44px, 5vw, 68px);
+
+    line-height:
+        0.95;
+
+    letter-spacing:
+        -0.06em;
+
+}
+
+
+.linkedin-problem-grid h2 span {
+
+    color:
+        var(--blue);
+
+}
+
+
+.linkedin-problem-grid > div:last-child {
+
+    padding-top:
+        18px;
+
+}
+
+
+.linkedin-large-copy {
+
+    color:
+        var(--black) !important;
+
+    font-size:
+        22px !important;
+
+    line-height:
+        1.35;
+
+}
+
+
+.linkedin-problem-grid p {
+
+    max-width:
+        650px;
+
+    margin-bottom:
+        20px;
+
+    color:
+        var(--grey-dark);
+
+    font-size:
+        14px;
+
+}
+
+
+/* =========================================================
+   STRATEGIC SHIFT
+========================================================= */
+
+.linkedin-shift {
+
+    padding:
+        115px 0;
+
+    background:
+        var(--white-pure);
+
+}
+
+
+.linkedin-shift-heading {
+
+    max-width:
+        850px;
+
+}
+
+
+.linkedin-shift-heading h2 {
+
+    font-size:
+        clamp(44px, 6vw, 76px);
+
+    line-height:
+        0.94;
+
+    letter-spacing:
+        -0.065em;
+
+}
+
+
+.linkedin-shift-heading h2 span {
+
+    color:
+        var(--blue);
+
+}
+
+
+.linkedin-shift-visual {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 80px 1fr;
+
+    align-items:
+        stretch;
+
+    margin-top:
+        65px;
+
+}
+
+
+.shift-side {
+
+    padding:
+        35px;
+
+    border:
+        1px solid var(--line-light);
+
+}
+
+
+.shift-side-active {
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+    border-color:
+        var(--black);
+
+}
+
+
+.shift-side span {
+
+    display:
+        block;
+
+    color:
+        var(--grey-dark);
+
+    font-size:
+        8px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.13em;
+
+}
+
+
+.shift-side-active span {
+
+    color:
+        var(--blue-light);
+
+}
+
+
+.shift-side strong {
+
+    display:
+        block;
+
+    max-width:
+        330px;
+
+    margin-top:
+        32px;
+
+    font-size:
+        31px;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -0.04em;
+
+}
+
+
+.shift-side p {
+
+    max-width:
+        380px;
+
+    margin-top:
+        17px;
+
+    color:
+        var(--grey-dark);
+
+    font-size:
+        12px;
+
+}
+
+
+.shift-side-active p {
+
+    color:
+        var(--grey);
+
+}
+
+
+.shift-arrow {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    color:
+        var(--blue);
+
+    background:
+        var(--cream);
+
+    font-size:
+        30px;
+
+}
+
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.linkedin-approach {
+
+    padding:
+        115px 0;
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+}
+
+
+.linkedin-approach-heading {
+
+    max-width:
+        900px;
+
+}
+
+
+.linkedin-approach-heading h2 {
+
+    font-size:
+        clamp(44px, 6vw, 75px);
+
+    line-height:
+        0.94;
+
+    letter-spacing:
+        -0.065em;
+
+}
+
+
+.linkedin-approach-heading h2 span {
+
+    color:
+        var(--blue);
+
+}
+
+
+.linkedin-approach-list {
+
+    margin-top:
+        65px;
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+.linkedin-approach-list article {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        60px 1fr 150px;
+
+    gap:
+        35px;
+
+    align-items:
+        center;
+
+    padding:
+        34px 0;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.approach-index {
+
+    color:
+        var(--blue);
+
+    font-size:
+        10px;
+
+    font-weight:
+        900;
+
+}
+
+
+.approach-content small {
+
+    color:
+        var(--grey);
+
+    font-size:
+        8px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.13em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.approach-content h3 {
+
+    margin-top:
+        7px;
+
+    font-size:
+        27px;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -0.035em;
+
+}
+
+
+.approach-content p {
+
+    max-width:
+        620px;
+
+    margin-top:
+        12px;
+
+    color:
+        var(--grey);
+
+    font-size:
+        12px;
+
+}
+
+
+.approach-word {
+
+    justify-self:
+        end;
+
+    color:
+        #353b45;
+
+    font-size:
+        10px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.13em;
+
+}
+
+
+/* =========================================================
+   GROWTH MOMENT
+========================================================= */
+
+.linkedin-growth-moment {
+
+    padding:
+        120px 0;
+
+    background:
+        var(--blue);
+
+    color:
+        var(--black);
+
+}
+
+
+.growth-moment-top {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+}
+
+
+.growth-moment-top .section-label {
+
+    color:
+        var(--black);
+
+}
+
+
+.growth-moment-top > span {
+
+    font-size:
+        8px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.12em;
+
+}
+
+
+.growth-moment-main {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.1fr 0.9fr;
+
+    gap:
+        90px;
+
+    align-items:
+        end;
+
+    margin-top:
+        35px;
+
+}
+
+
+.growth-moment-number {
+
+    font-size:
+        clamp(120px, 19vw, 230px);
+
+    line-height:
+        0.7;
+
+    letter-spacing:
+        -0.11em;
+
+}
+
+
+.growth-moment-copy h2 {
+
+    font-size:
+        clamp(40px, 5vw, 63px);
+
+    line-height:
+        0.95;
+
+    letter-spacing:
+        -0.06em;
+
+}
+
+
+.growth-moment-copy h2 span {
+
+    color:
+        var(--white);
+
+}
+
+
+.growth-moment-copy p {
+
+    max-width:
+        600px;
+
+    margin-top:
+        21px;
+
+    color:
+        #202a45;
+
+    font-size:
+        14px;
+
+}
+
+
+.growth-line {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    margin-top:
+        90px;
+
+    border-top:
+        1px solid rgba(9,11,14,0.2);
+
+}
+
+
+.growth-line > div {
+
+    padding:
+        20px;
+
+    border-right:
+        1px solid rgba(9,11,14,0.2);
+
+}
+
+
+.growth-line > div:last-child {
+
+    border-right:
+        0;
+
+}
+
+
+.growth-line span {
+
+    display:
+        block;
+
+    color:
+        #33405f;
+
+    font-size:
+        8px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.12em;
+
+}
+
+
+.growth-line strong {
+
+    display:
+        block;
+
+    margin-top:
+        6px;
+
+    font-size:
+        16px;
+
+}
+
+
+/* =========================================================
+   LEARNING
+========================================================= */
+
+.linkedin-learning {
+
+    padding:
+        115px 0;
+
+    background:
+        var(--cream);
+
+}
+
+
+.linkedin-learning-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        0.8fr 1fr;
+
+    gap:
+        100px;
+
+}
+
+
+.linkedin-learning-grid h2 {
+
+    font-size:
+        clamp(45px, 6vw, 75px);
+
+    line-height:
+        0.93;
+
+    letter-spacing:
+        -0.065em;
+
+}
+
+
+.linkedin-learning-grid h2 span {
+
+    color:
+        var(--blue);
+
+}
+
+
+.linkedin-learning-grid > div:last-child {
+
+    padding-top:
+        20px;
+
+}
+
+
+.linkedin-learning-grid p {
+
+    max-width:
+        650px;
+
+    margin-bottom:
+        20px;
+
+    color:
+        var(--grey-dark);
+
+    font-size:
+        14px;
+
+}
+
+
+.linkedin-learning-grid .linkedin-learning-lead {
+
+    color:
+        var(--black);
+
+    font-size:
+        23px;
+
+    line-height:
+        1.35;
+
+}
+
+
+/* =========================================================
+   NEXT
+========================================================= */
+
+.linkedin-next {
+
+    padding:
+        65px 0;
+
+    background:
+        var(--white-pure);
+
+}
+
+
+.linkedin-next > .section-container {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        50px;
+
+}
+
+
+.linkedin-next span {
+
+    color:
+        var(--blue);
+
+    font-size:
+        8px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.12em;
+
+}
+
+
+.linkedin-next h2 {
+
+    max-width:
+        700px;
+
+    margin-top:
+        8px;
+
+    font-size:
+        clamp(30px, 4vw, 48px);
+
+    line-height:
+        0.98;
+
+    letter-spacing:
+        -0.05em;
+
+}
+
+
+.linkedin-next h2 span {
+
+    color:
+        var(--blue);
+
+}
+
+
+.next-case-button {
+
+    min-width:
+        205px;
+
+    min-height:
+        52px;
+
+    padding:
+        0 18px;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        10px;
+
+    color:
+        var(--white);
+
+    background:
+        var(--black);
+
+    border-radius:
+        6px;
+
+    font-size:
+        10px;
+
+    font-weight:
+        900;
+
+}
+
+
+.next-case-button:hover {
+
+    background:
+        var(--blue);
+
+    color:
+        var(--black);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+
+    .linkedin-case-hero-grid,
+    .linkedin-problem-grid,
+    .growth-moment-main,
+    .linkedin-learning-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            50px;
+
+    }
+
+
+    .linkedin-facts-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .linkedin-facts-grid > div:nth-child(2) {
+
+        border-right:
+            0;
+
+    }
+
+
+    .linkedin-shift-visual {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .shift-arrow {
+
+        min-height:
+            60px;
+
+    }
+
+
+    .linkedin-approach-list article {
+
+        grid-template-columns:
+            45px 1fr;
+
+    }
+
+
+    .approach-word {
+
+        display:
+            none;
+
+    }
+
+
+    .linkedin-next > .section-container {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .linkedin-case-hero {
+
+        padding:
+            70px 0;
+
+    }
+
+
+    .linkedin-case-title h1 {
+
+        font-size:
+            51px;
+
+    }
+
+
+    .linkedin-growth-number strong {
+
+        font-size:
+            95px;
+
+    }
+
+
+    .linkedin-facts-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .linkedin-facts-grid > div {
+
+        min-height:
+            auto;
+
+        border-right:
+            0;
+
+        border-bottom:
+            1px solid rgba(9,11,14,0.17);
+
+    }
+
+
+    .linkedin-facts-grid > div:last-child {
+
+        border-bottom:
+            0;
+
+    }
+
+
+    .linkedin-problem,
+    .linkedin-shift,
+    .linkedin-approach,
+    .linkedin-growth-moment,
+    .linkedin-learning {
+
+        padding:
+            80px 0;
+
+    }
+
+
+    .linkedin-problem-grid h2,
+    .linkedin-shift-heading h2,
+    .linkedin-approach-heading h2,
+    .linkedin-learning-grid h2 {
+
+        font-size:
+            42px;
+
+    }
+
+
+    .shift-side {
+
+        padding:
+            27px;
+
+    }
+
+
+    .shift-side strong {
+
+        margin-top:
+            22px;
+
+        font-size:
+            27px;
+
+    }
+
+
+    .linkedin-approach-list article {
+
+        grid-template-columns:
+            35px 1fr;
+
+        gap:
+            15px;
+
+        padding:
+            27px 0;
+
+    }
+
+
+    .approach-content h3 {
+
+        font-size:
+            23px;
+
+    }
+
+
+    .growth-moment-number {
+
+        font-size:
+            120px;
+
+    }
+
+
+    .growth-line {
+
+        grid-template-columns:
+            1fr;
+
+        margin-top:
+            60px;
+
+    }
+
+
+    .growth-line > div {
+
+        border-right:
+            0;
+
+        border-bottom:
+            1px solid rgba(9,11,14,0.2);
+
+    }
+
+
+    .growth-line > div:last-child {
+
+        border-bottom:
+            0;
+
+    }
+
+
+    .linkedin-next {
+
+        padding:
+            55px 0;
+
+    }
+
+}
