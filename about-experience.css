@@ -1,1 +1,964 @@
 
+/* =========================================================
+   ABOUT + EXPERIENCE
+   PAGE-SPECIFIC STYLES
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   EXPERIENCE HERO
+--------------------------------------------------------- */
+
+.experience-hero {
+    padding: 95px 0 85px;
+    background: #090b0e;
+    color: #ffffff;
+}
+
+.experience-kicker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.14);
+    color: #a8adb7;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.experience-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 90px;
+    align-items: end;
+    padding-top: 65px;
+}
+
+.experience-hero h1 {
+    max-width: 900px;
+    font-size: clamp(53px, 7vw, 91px);
+    line-height: 0.89;
+    letter-spacing: -0.075em;
+}
+
+.experience-hero h1 span {
+    color: #7dd3fc;
+}
+
+.experience-hero-grid > div:first-child > p {
+    max-width: 650px;
+    margin-top: 28px;
+    color: #a8adb7;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.experience-hero-stat {
+    padding: 27px;
+    border: 1px solid rgba(255,255,255,0.14);
+}
+
+.experience-hero-stat span {
+    color: #a8adb7;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.experience-hero-stat strong {
+    display: block;
+    margin-top: 15px;
+    color: #7dd3fc;
+    font-size: 100px;
+    line-height: 0.75;
+    letter-spacing: -0.1em;
+}
+
+.experience-hero-stat p {
+    margin-top: 20px;
+    color: #a8adb7;
+    font-size: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   EXPERIENCE SNAPSHOT
+--------------------------------------------------------- */
+
+.experience-snapshot {
+    background: #7dd3fc;
+}
+
+.experience-snapshot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.experience-snapshot-grid > div {
+    min-height: 115px;
+    padding: 25px;
+    border-right: 1px solid rgba(9,11,14,0.16);
+}
+
+.experience-snapshot-grid > div:last-child {
+    border-right: 0;
+}
+
+.experience-snapshot-grid span {
+    display: block;
+    color: #334155;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.experience-snapshot-grid strong {
+    display: block;
+    margin-top: 8px;
+    color: #090b0e;
+    font-size: 17px;
+}
+
+
+/* ---------------------------------------------------------
+   EXPERIENCE STORY
+--------------------------------------------------------- */
+
+.experience-story {
+    padding: 115px 0;
+    background: #f2eee6;
+}
+
+.experience-story-heading {
+    max-width: 900px;
+}
+
+.experience-story-heading h2 {
+    margin-top: 8px;
+    font-size: clamp(45px, 6vw, 76px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+}
+
+.experience-story-heading h2 span {
+    color: #2563eb;
+}
+
+.experience-story-heading > p:last-child {
+    max-width: 650px;
+    margin-top: 20px;
+    color: #59616d;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+
+/* ---------------------------------------------------------
+   EXPERIENCE TIMELINE
+--------------------------------------------------------- */
+
+.experience-timeline {
+    position: relative;
+    margin-top: 75px;
+}
+
+.experience-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 143px;
+    width: 1px;
+    background: rgba(9,11,14,0.13);
+}
+
+.experience-entry {
+    position: relative;
+    display: grid;
+    grid-template-columns: 115px 55px 1fr;
+    gap: 0;
+    padding: 0 0 75px;
+}
+
+.experience-entry:last-child {
+    padding-bottom: 0;
+}
+
+.experience-date {
+    padding-top: 3px;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.experience-date span {
+    display: block;
+    color: #2563eb;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+.experience-date small {
+    display: block;
+    margin-top: 4px;
+    color: #59616d;
+    font-size: 8px;
+    font-weight: 900;
+}
+
+.experience-marker {
+    position: relative;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    margin-left: 23px;
+    border: 1px solid rgba(9,11,14,0.18);
+    border-radius: 50%;
+    background: #f2eee6;
+    color: #2563eb;
+    font-size: 8px;
+    font-weight: 900;
+}
+
+.experience-current .experience-marker {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+.experience-content {
+    padding-left: 35px;
+}
+
+.experience-company-line {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(9,11,14,0.13);
+}
+
+.experience-company-line > div > span {
+    display: block;
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+.experience-company-line > div > small {
+    display: block;
+    margin-top: 5px;
+    color: #59616d;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.experience-company-line > strong {
+    color: #090b0e;
+    font-size: 18px;
+    text-align: right;
+}
+
+.experience-lead {
+    max-width: 700px;
+    margin-top: 24px;
+    color: #090b0e;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.experience-content ul {
+    max-width: 720px;
+    margin: 22px 0 0;
+    padding-left: 18px;
+}
+
+.experience-content li {
+    margin-bottom: 10px;
+    color: #59616d;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 23px;
+}
+
+.experience-tags span {
+    padding: 7px 9px;
+    border: 1px solid rgba(9,11,14,0.13);
+    color: #59616d;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+
+/* ---------------------------------------------------------
+   EXPERIENCE CAPABILITIES
+--------------------------------------------------------- */
+
+.experience-capabilities {
+    padding: 115px 0;
+    background: #090b0e;
+    color: #ffffff;
+}
+
+.experience-capabilities-heading {
+    max-width: 850px;
+}
+
+.experience-capabilities-heading h2 {
+    margin-top: 8px;
+    font-size: clamp(44px, 6vw, 74px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+}
+
+.experience-capabilities-heading h2 span {
+    color: #7dd3fc;
+}
+
+.experience-capability-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.14);
+}
+
+.experience-capability-list > div {
+    min-height: 220px;
+    padding: 25px 22px;
+    border-right: 1px solid rgba(255,255,255,0.14);
+}
+
+.experience-capability-list > div:last-child {
+    border-right: 0;
+}
+
+.experience-capability-list span {
+    color: #7dd3fc;
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.experience-capability-list strong {
+    display: block;
+    margin-top: 45px;
+    font-size: 23px;
+}
+
+.experience-capability-list p {
+    margin-top: 12px;
+    color: #a8adb7;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   EXPERIENCE CTA
+--------------------------------------------------------- */
+
+.experience-cta {
+    padding: 100px 0;
+    background: #f2eee6;
+}
+
+.experience-cta h2 {
+    max-width: 850px;
+    margin-top: 8px;
+    font-size: clamp(50px, 7vw, 85px);
+    line-height: 0.9;
+    letter-spacing: -0.07em;
+}
+
+.experience-cta h2 span {
+    color: #2563eb;
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT HERO
+--------------------------------------------------------- */
+
+.about-hero {
+    padding: 95px 0 100px;
+    background: #090b0e;
+    color: #ffffff;
+}
+
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: 330px minmax(0, 1fr);
+    gap: 85px;
+    align-items: center;
+}
+
+.about-photo-wrap {
+    width: 100%;
+}
+
+.about-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.about-hero-copy h1 {
+    max-width: 800px;
+    margin-top: 10px;
+    font-size: clamp(53px, 7vw, 91px);
+    line-height: 0.89;
+    letter-spacing: -0.075em;
+}
+
+.about-hero-copy h1 span {
+    color: #7dd3fc;
+}
+
+.about-intro {
+    max-width: 680px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.about-hero-copy > p:not(.section-label):not(.about-intro) {
+    max-width: 650px;
+    margin-top: 18px;
+    color: #a8adb7;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT PROFILE
+--------------------------------------------------------- */
+
+.about-profile {
+    padding: 115px 0;
+    background: #f2eee6;
+}
+
+.about-profile-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 100px;
+}
+
+.about-profile-grid h2 {
+    margin-top: 8px;
+    font-size: clamp(44px, 6vw, 74px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+}
+
+.about-profile-grid h2 span {
+    color: #2563eb;
+}
+
+.about-profile-grid > div:last-child {
+    padding-top: 20px;
+}
+
+.about-profile-grid p {
+    max-width: 650px;
+    margin-bottom: 20px;
+    color: #59616d;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.about-profile-grid .about-large-copy {
+    color: #090b0e;
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT DOMAINS
+--------------------------------------------------------- */
+
+.about-domains {
+    padding: 115px 0;
+    background: #ffffff;
+}
+
+.about-domain-heading {
+    max-width: 900px;
+}
+
+.about-domain-heading h2 {
+    margin-top: 8px;
+    font-size: clamp(44px, 6vw, 74px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+}
+
+.about-domain-heading h2 span {
+    color: #2563eb;
+}
+
+.about-domain-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 65px;
+    border-top: 1px solid rgba(9,11,14,0.13);
+}
+
+.about-domain-list > div {
+    min-height: 300px;
+    padding: 27px;
+    border-right: 1px solid rgba(9,11,14,0.13);
+}
+
+.about-domain-list > div:last-child {
+    border-right: 0;
+}
+
+.about-domain-list span {
+    color: #2563eb;
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.about-domain-list strong {
+    display: block;
+    margin-top: 50px;
+    color: #090b0e;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.about-domain-list p {
+    margin-top: 15px;
+    color: #59616d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT THINKING
+--------------------------------------------------------- */
+
+.about-thinking {
+    padding: 115px 0;
+    background: #090b0e;
+    color: #ffffff;
+}
+
+.about-thinking-heading {
+    max-width: 850px;
+}
+
+.about-thinking-heading h2 {
+    margin-top: 8px;
+    font-size: clamp(44px, 6vw, 74px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+}
+
+.about-thinking-heading h2 span {
+    color: #7dd3fc;
+}
+
+.about-thinking-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 65px;
+    border-top: 1px solid rgba(255,255,255,0.14);
+}
+
+.about-thinking-list > div {
+    min-height: 250px;
+    padding: 27px;
+    border-right: 1px solid rgba(255,255,255,0.14);
+    border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+
+.about-thinking-list > div:nth-child(even) {
+    border-right: 0;
+}
+
+.about-thinking-list span {
+    color: #7dd3fc;
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.about-thinking-list h3 {
+    max-width: 450px;
+    margin-top: 43px;
+    color: #ffffff;
+    font-size: 23px;
+    line-height: 1.05;
+}
+
+.about-thinking-list p {
+    max-width: 520px;
+    margin-top: 13px;
+    color: #a8adb7;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT CURRENT
+--------------------------------------------------------- */
+
+.about-current {
+    padding: 115px 0;
+    background: #7dd3fc;
+}
+
+.about-current-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 100px;
+}
+
+.about-current-grid h2 {
+    margin-top: 8px;
+    color: #090b0e;
+    font-size: clamp(44px, 6vw, 74px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+}
+
+.about-current-grid h2 span {
+    color: #ffffff;
+}
+
+.about-current-grid > div:last-child {
+    padding-top: 20px;
+}
+
+.about-current-grid p {
+    max-width: 650px;
+    margin-bottom: 20px;
+    color: #334155;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.about-current-grid .about-current-lead {
+    color: #090b0e;
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT EDUCATION
+--------------------------------------------------------- */
+
+.about-education {
+    padding: 100px 0;
+    background: #f2eee6;
+}
+
+.about-education > .section-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 100px;
+}
+
+.about-education h2 {
+    margin-top: 8px;
+    font-size: clamp(42px, 5vw, 65px);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+}
+
+.about-education h2 span {
+    color: #2563eb;
+}
+
+.education-list {
+    border-top: 1px solid rgba(9,11,14,0.13);
+}
+
+.education-list > div {
+    padding: 23px 0;
+    border-bottom: 1px solid rgba(9,11,14,0.13);
+}
+
+.education-list span {
+    color: #2563eb;
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.education-list strong {
+    display: block;
+    margin-top: 7px;
+    color: #090b0e;
+    font-size: 20px;
+}
+
+.education-list small {
+    display: block;
+    margin-top: 6px;
+    color: #59616d;
+    font-size: 11px;
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT PERSONAL
+--------------------------------------------------------- */
+
+.about-personal {
+    padding: 115px 0;
+    background: #090b0e;
+    color: #ffffff;
+}
+
+.about-personal h2 {
+    max-width: 950px;
+    margin-top: 8px;
+    font-size: clamp(45px, 6vw, 76px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+}
+
+.about-personal h2 span {
+    color: #7dd3fc;
+}
+
+.about-personal > .section-container > p:not(.section-label) {
+    max-width: 680px;
+    margin-top: 25px;
+    color: #a8adb7;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.about-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT CONTACT
+--------------------------------------------------------- */
+
+.about-contact {
+    padding: 100px 0;
+    background: #f2eee6;
+}
+
+.about-contact h2 {
+    max-width: 900px;
+    margin-top: 8px;
+    font-size: clamp(50px, 7vw, 85px);
+    line-height: 0.9;
+    letter-spacing: -0.07em;
+}
+
+.about-contact h2 span {
+    color: #2563eb;
+}
+
+.about-contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.about-link-button {
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border: 1px solid #090b0e;
+    border-radius: 5px;
+    color: #090b0e;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.about-link-button:hover {
+    background: #090b0e;
+    color: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 950px) {
+
+    .experience-hero-grid,
+    .about-hero-grid,
+    .about-profile-grid,
+    .about-current-grid,
+    .about-education > .section-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .experience-capability-list,
+    .about-domain-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-timeline::before {
+        left: 105px;
+    }
+
+    .experience-entry {
+        grid-template-columns: 80px 50px 1fr;
+    }
+
+    .experience-date {
+        padding-right: 18px;
+    }
+
+    .experience-marker {
+        margin-left: 8px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .experience-hero,
+    .about-hero {
+        padding: 70px 0;
+    }
+
+    .experience-hero h1,
+    .about-hero-copy h1 {
+        font-size: 51px;
+    }
+
+    .experience-snapshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-snapshot-grid > div {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(9,11,14,0.16);
+    }
+
+    .experience-snapshot-grid > div:last-child {
+        border-bottom: 0;
+    }
+
+    .experience-story,
+    .experience-capabilities,
+    .about-profile,
+    .about-domains,
+    .about-thinking,
+    .about-current,
+    .about-personal {
+        padding: 80px 0;
+    }
+
+    .experience-story-heading h2,
+    .experience-capabilities-heading h2,
+    .about-profile-grid h2,
+    .about-domain-heading h2,
+    .about-thinking-heading h2,
+    .about-current-grid h2,
+    .about-personal h2 {
+        font-size: 42px;
+    }
+
+    .experience-timeline::before {
+        display: none;
+    }
+
+    .experience-entry {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding-bottom: 60px;
+    }
+
+    .experience-date {
+        padding: 0;
+        text-align: left;
+    }
+
+    .experience-date span,
+    .experience-date small {
+        display: inline;
+    }
+
+    .experience-date small {
+        margin-left: 6px;
+    }
+
+    .experience-marker {
+        display: none;
+    }
+
+    .experience-content {
+        padding: 0;
+    }
+
+    .experience-company-line {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .experience-company-line > strong {
+        text-align: left;
+    }
+
+    .experience-capability-list,
+    .about-domain-list,
+    .about-thinking-list {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-capability-list > div,
+    .about-domain-list > div,
+    .about-thinking-list > div {
+        border-right: 0;
+    }
+
+    .about-photo {
+        max-width: 330px;
+    }
+
+    .about-education {
+        padding: 80px 0;
+    }
+
+    .about-education h2 {
+        font-size: 42px;
+    }
+
+    .about-contact {
+        padding: 80px 0;
+    }
+
+}
