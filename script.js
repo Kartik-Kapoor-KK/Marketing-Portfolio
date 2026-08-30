@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
 
 
-    /*
-     * MOBILE NAVIGATION
-     */
-
     const menuButton =
         document.querySelector(".mobile-menu-button");
 
     const navigation =
         document.querySelector(".main-nav");
 
+
+    /*
+     * MOBILE NAVIGATION
+     */
 
     if (menuButton && navigation) {
 
@@ -27,6 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 menuButton.setAttribute(
                     "aria-expanded",
                     isOpen
+                );
+
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    isOpen
+                        ? "Close navigation"
+                        : "Open navigation"
                 );
 
             }
@@ -50,6 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             "false"
                         );
 
+                        menuButton.setAttribute(
+                            "aria-label",
+                            "Open navigation"
+                        );
+
                     }
                 );
 
@@ -59,19 +72,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /*
-     * SUBTLE SCROLL REVEAL
+     * SUBTLE CONTENT REVEAL
      */
 
     const revealItems =
         document.querySelectorAll(
-            ".featured-work-item, .industry-line"
+            ".work-preview-list article, .industry-line"
         );
 
 
-    if (
-        "IntersectionObserver"
-        in window
-    ) {
+    if ("IntersectionObserver" in window) {
 
         const observer =
             new IntersectionObserver(
@@ -84,11 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                 entry.isIntersecting
                             ) {
 
-                                entry.target.style.opacity =
-                                    "1";
-
-                                entry.target.style.transform =
-                                    "translateY(0)";
+                                entry.target.classList.add(
+                                    "is-visible"
+                                );
 
                                 observer.unobserve(
                                     entry.target
@@ -109,14 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
         revealItems.forEach(
             function (item) {
 
-                item.style.opacity =
-                    "0";
-
-                item.style.transform =
-                    "translateY(15px)";
-
-                item.style.transition =
-                    "opacity 0.65s ease, transform 0.65s ease";
+                item.classList.add(
+                    "reveal-item"
+                );
 
                 observer.observe(item);
 
@@ -124,6 +127,5 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
     }
-
 
 });
